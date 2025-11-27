@@ -1,0 +1,21 @@
+# Git files
+.git/
+.gitignore
+.github/
+
+# Development
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+
+# Logs
+logs/
+*.log

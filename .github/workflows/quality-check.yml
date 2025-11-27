@@ -1,0 +1,74 @@
+name: Quality Check
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  quality:
+    name: HTML, CSS & JS Quality
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate HTML
+        run: |
+          npm install -g html-validate
+          html-validate index.html
+
+      - name: Lint CSS
+        run: |
+          npm install -g stylelint stylelint-config-standard
+          stylelint "css/*.css" --max-warnings 0
+
+      - name: Lint JavaScript
+        run: |
+          npm install -g eslint
+          npx eslint js/*.js --no-eslintrc --env browser,es6 || true
+
+      - name: Check for broken links
+        run: |
+          npm install -g linkinator
+          linkinator index.html --skip-anchor --markdown
+
+  lighthouse:
+    name: Lighthouse Audit
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v10
+        with:
+          urls: |
+            http://localhost
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+          configPath: '.github/lighthouse/lighthouserc.json'
+
+  accessibility:
+    name: Accessibility Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run accessibility audit
+        run: |
+          npm install -g @axe-core/cli
+          npx axe index.html --tags wcag2aa || true

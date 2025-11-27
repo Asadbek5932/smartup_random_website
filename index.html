@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smartup Random - A comprehensive randomization utility app for mobile, desktop, Telegram, and WhatsApp">
+    <meta name="keywords" content="random, randomizer, random number, random choice, team generator, mobile app, telegram bot, whatsapp bot">
+    <meta name="author" content="Smartup Random Team">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Smartup Random - Your Ultimate Randomization Tool">
+    <meta property="og:description" content="Generate random numbers, make random choices, and create balanced teams. Available on mobile, desktop, Telegram, and WhatsApp!">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Smartup Random - Your Ultimate Randomization Tool">
+    <meta name="twitter:description" content="Generate random numbers, make random choices, and create balanced teams.">
+
+    <title>Smartup Random - Your Ultimate Randomization Tool</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">🎲</span>
+                    <span class="logo-text">Smartup Random</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#platforms" class="nav-link">Platforms</a></li>
+                    <li><a href="#bots" class="nav-link">Bots</a></li>
+                    <li><a href="#download" class="nav-link">Download</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Your Ultimate <span class="gradient-text">Randomization</span> Tool
+                    </h1>
+                    <p class="hero-description">
+                        Generate random numbers, make random choices, and create perfectly balanced teams.
+                        Available on mobile, desktop, Telegram, and WhatsApp!
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary">
+                            <span class="btn-icon">📱</span>
+                            Download App
+                        </a>
+                        <a href="#bots" class="btn btn-secondary">
+                            <span class="btn-icon">🤖</span>
+                            Try Bots
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Platforms</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">7</div>
+                            <div class="stat-label">Languages</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Bots</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-preview">
+                                <div class="preview-header">Smartup Random</div>
+                                <div class="preview-features">
+                                    <div class="preview-card">🔢 Random Number</div>
+                                    <div class="preview-card">🎯 Random Choice</div>
+                                    <div class="preview-card">👥 Random Teams</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-subtitle">Everything you need for fair randomization</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔢</div>
+                    <h3 class="feature-title">Random Number Generator</h3>
+                    <p class="feature-description">
+                        Generate random numbers within any specified range. Perfect for games,
+                        raffles, or any random selection needs.
+                    </p>
+                    <ul class="feature-list">
+                        <li>✓ Any range (positive, negative, or crossing zero)</li>
+                        <li>✓ Instant results</li>
+                        <li>✓ Simple and intuitive</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Random List Picker</h3>
+                    <p class="feature-description">
+                        Create custom lists and randomly select items. Save your lists
+                        and use them again anytime.
+                    </p>
+                    <ul class="feature-list">
+                        <li>✓ Unlimited items</li>
+                        <li>✓ Persistent storage</li>
+                        <li>✓ Search functionality</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3 class="feature-title">Team Generator</h3>
+                    <p class="feature-description">
+                        Distribute players into balanced teams based on skill levels.
+                        Intelligent algorithm ensures fair distribution.
+                    </p>
+                    <ul class="feature-list">
+                        <li>✓ Skill-based balancing</li>
+                        <li>✓ Multiple team sizes</li>
+                        <li>✓ Smart algorithm</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Section -->
+    <section class="platforms" id="platforms">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Available Everywhere</h2>
+                <p class="section-subtitle">Use on your favorite platform</p>
+            </div>
+            <div class="platforms-grid">
+                <div class="platform-card">
+                    <div class="platform-icon">📱</div>
+                    <h3 class="platform-name">Android</h3>
+                    <p class="platform-description">Download from Google Play</p>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon">🍎</div>
+                    <h3 class="platform-name">iOS</h3>
+                    <p class="platform-description">Available on App Store</p>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon">🌐</div>
+                    <h3 class="platform-name">Web</h3>
+                    <p class="platform-description">Use in your browser</p>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon">🪟</div>
+                    <h3 class="platform-name">Windows</h3>
+                    <p class="platform-description">Desktop application</p>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon">🍏</div>
+                    <h3 class="platform-name">macOS</h3>
+                    <p class="platform-description">Native Mac app</p>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon">🐧</div>
+                    <h3 class="platform-name">Linux</h3>
+                    <p class="platform-description">Linux compatible</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bots Section -->
+    <section class="bots" id="bots">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Use Our Bots</h2>
+                <p class="section-subtitle">No installation required - use directly in your messenger</p>
+            </div>
+            <div class="bots-wrapper">
+                <div class="bot-card telegram-bot">
+                    <div class="bot-header">
+                        <div class="bot-icon">✈️</div>
+                        <h3 class="bot-title">Telegram Bot</h3>
+                    </div>
+                    <p class="bot-description">
+                        Use Smartup Random directly in Telegram. Fast, convenient, and always available.
+                    </p>
+                    <div class="bot-features">
+                        <div class="bot-feature">
+                            <span class="check-icon">✓</span>
+                            <span>/random_number - Generate numbers</span>
+                        </div>
+                        <div class="bot-feature">
+                            <span class="check-icon">✓</span>
+                            <span>/random_choice - Pick items</span>
+                        </div>
+                        <div class="bot-feature">
+                            <span class="check-icon">✓</span>
+                            <span>/random_teams - Create teams</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-bot telegram-btn">
+                        Open in Telegram
+                    </a>
+                </div>
+                <div class="bot-card whatsapp-bot">
+                    <div class="bot-header">
+                        <div class="bot-icon">💬</div>
+                        <h3 class="bot-title">WhatsApp Bot</h3>
+                    </div>
+                    <p class="bot-description">
+                        Chat with our WhatsApp bot for instant randomization. Simple commands, quick results.
+                    </p>
+                    <div class="bot-features">
+                        <div class="bot-feature">
+                            <span class="check-icon">✓</span>
+                            <span>number 1 100 - Generate numbers</span>
+                        </div>
+                        <div class="bot-feature">
+                            <span class="check-icon">✓</span>
+                            <span>choice A B C - Pick items</span>
+                        </div>
+                        <div class="bot-feature">
+                            <span class="check-icon">✓</span>
+                            <span>teams 2 John:Easy - Create teams</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-bot whatsapp-btn">
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perfect For</h2>
+                <p class="section-subtitle">Countless situations requiring fair randomization</p>
+            </div>
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <div class="use-case-icon">🎓</div>
+                    <h3 class="use-case-title">Education</h3>
+                    <ul class="use-case-list">
+                        <li>Random student selection</li>
+                        <li>Team formation for projects</li>
+                        <li>Quiz answer randomization</li>
+                        <li>Classroom games</li>
+                    </ul>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">⚽</div>
+                    <h3 class="use-case-title">Sports</h3>
+                    <ul class="use-case-list">
+                        <li>Team distribution for games</li>
+                        <li>Tournament brackets</li>
+                        <li>Random player selection</li>
+                        <li>Fair team balancing</li>
+                    </ul>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">🎮</div>
+                    <h3 class="use-case-title">Games</h3>
+                    <ul class="use-case-list">
+                        <li>Dice rolling</li>
+                        <li>Random events</li>
+                        <li>Turn order</li>
+                        <li>Loot distribution</li>
+                    </ul>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">🤔</div>
+                    <h3 class="use-case-title">Decisions</h3>
+                    <ul class="use-case-list">
+                        <li>Restaurant selection</li>
+                        <li>Movie choices</li>
+                        <li>Task assignment</li>
+                        <li>Raffle drawings</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text">
+                    <h2 class="download-title">Ready to Get Started?</h2>
+                    <p class="download-description">
+                        Download Smartup Random today and experience fair, fun randomization
+                        on all your devices.
+                    </p>
+                    <div class="download-badges">
+                        <a href="#" class="badge-link">
+                            <img src="assets/google-play-badge.svg" alt="Get it on Google Play" class="store-badge">
+                        </a>
+                        <a href="#" class="badge-link">
+                            <img src="assets/app-store-badge.svg" alt="Download on App Store" class="store-badge">
+                        </a>
+                    </div>
+                    <div class="download-info">
+                        <p class="info-item">
+                            <span class="info-icon">✓</span>
+                            Free to use
+                        </p>
+                        <p class="info-item">
+                            <span class="info-icon">✓</span>
+                            No ads
+                        </p>
+                        <p class="info-item">
+                            <span class="info-icon">✓</span>
+                            Works offline
+                        </p>
+                    </div>
+                </div>
+                <div class="download-visual">
+                    <div class="download-illustration">
+                        <div class="illustration-circle"></div>
+                        <div class="illustration-icon">🎲</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Smartup Random</h3>
+                    <p class="footer-description">
+                        Your ultimate randomization tool for all platforms.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Email</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#platforms">Platforms</a></li>
+                        <li><a href="#bots">Bots</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Changelog</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Languages</h4>
+                    <ul class="footer-links">
+                        <li>🇬🇧 English</li>
+                        <li>🇷🇺 Русский</li>
+                        <li>🇸🇦 العربية</li>
+                        <li>🇺🇿 O'zbek</li>
+                        <li>🇰🇿 Қазақша</li>
+                        <li>🇹🇯 Тоҷикӣ</li>
+                        <li>🇰🇬 Кыргызча</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2024 Smartup Random. Made with ❤️ using Flutter.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top">
+        <span>↑</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
